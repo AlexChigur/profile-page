@@ -1,0 +1,35 @@
+$screen-lg-max: 1440px;
+$screen-md-max: 1200px;
+$screen-sm-max: 992px;
+$screen-xs-max: 768px;
+$screen-xxs-max: 568px;
+
+@mixin screen-lg {
+  @media (max-width: $screen-lg-max), (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin screen-md  {
+  @media (max-width: $screen-md-max), (orientation: portrait) {
+    @content;
+  }
+};
+
+@mixin screen-sm {
+  @media (max-width: $screen-sm-max) {
+    @content;
+  }
+};
+
+@mixin screen-xs {
+  @media (max-width: $screen-xs-max), (orientation: portrait) {
+    @content;
+  }
+};
+
+@mixin screen-xxs {
+  @media (max-width: $screen-xxs-max), (orientation: portrait) {
+    @content;
+  }
+}
